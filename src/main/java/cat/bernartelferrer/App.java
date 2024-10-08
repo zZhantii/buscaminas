@@ -78,8 +78,8 @@ public final class App {
             System.out.println(" ");
             System.out.println("\t\t**** MENÚ PRINCIPAL ****");
             System.out.println(" ");
-            System.out.println("\t1) Nueva partida " + "    2) Abrir partida anterior");
-            System.out.println("\t3) Enseñar registro " + " 4) Salir");
+            System.out.println("\t1) Nueva partida " + "    2) Cargat partida");
+            System.out.println("\t3) Salir");
             System.out.println(" ");
 
             break;
@@ -119,12 +119,8 @@ public final class App {
             case 2:
                 registroPartida(tabla);
             break;
-
-            case 3:
-                cargarPartida(dificultad, tabla, tablaMinas);
-            break;
             
-            case 4:
+            case 3:
                 salida = false;
             break;
             
@@ -437,22 +433,6 @@ public final class App {
             lectura.close();
         } catch (Exception e) {
             System.out.println("\t*** ERROR... No se ha cargado las partidas correctamente. *** "); 
-        }
-
-    }
-
-    /**
-     * Metodo para ver el registro de las partidas jugadas
-     * @param tabla tablas jugadas del usuario
-     */
-    public static void registroPartida(String tabla[][]) {
-
-        try {
-            
-
-
-        } catch (Exception e) {
-           System.out.println("ERROR...");
         }
 
     }
